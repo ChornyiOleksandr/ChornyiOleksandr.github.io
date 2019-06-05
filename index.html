@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Мой</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+       <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style type="text/css">
+	body {
+		background-color: #000Fff;
+    }
+.logo {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9b/Autocantantes-120x120.png");
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+.wrapper{
+  width:800px;
+  height:500px;
+  margin: 0 auto;
+  background-image: url("http://www.topoboi.com/large/201312/33040.jpg");
+}
+ul {
+  margin: 0 auto;
+}
+ul li { 
+  display: inline-block;
+  padding: 100px 5px; 
+  font-style: oblique;
+  color: white;
+  margin-top: -40px;
+  }
+.flex-container1 {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width:800px;
+  height: 150px;
+  margin:0 auto;
+  background-color: #00FFf0;
+  }
+  #cont {
+  width: 100%; 
+  height: 100px;
+  background-image: url("https://cdn.pixabay.com/photo/2016/12/29/18/41/background-1939125_960_720.jpg");
+  margin-top: 150px;
+}
+.team {
+  margin-top: 50px;
+}
+.hr {
+
+  width: 60px;
+  border: 3px solid yellow;
+  margin: 0 auto;
+  }
+  .flex-container2 {
+  flex-direction: column;
+  }
+.flex-container2 {
+  padding-bottom: 80px;
+  }
+  h1 { 
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  }
+  h2, h3 { 
+  padding-top: 50px;
+  margin: 0 auto;
+  text-align: center;
+  color: yellow;
+  }
+  .flex-container3, .flex-container4 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+}
+#circle1, #circle2, #circle3, #circle4 {
+  width: 120px;
+  height: 120px;
+  border: 2px solid black;
+  margin: 0 auto;
+  }
+  #abz {
+  padding: 50px 50px 0px 50px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  }
+  #pic, #pic1 {
+  width: 300px;
+  height: 150px;
+  border: 2px solid black;
+  margin: 0 auto;	
+  }
+ .welcome {
+ 	padding-top: 150px;
+ }
+ #circle1 {
+ 	background-image:  url("http://pikchyriki.net/avatar/minony/120/79.jpg");
+ }
+  #circle2 {
+ 	background-image: url("https://www.fivemon-keys.com/wp-content/uploads/2016/08/xmonkey-favicon-120x120.png.pagespeed.ic.V1UKItUKgs.png");
+ }
+  #circle3 {
+ 	background-image: url("http://pikchyriki.net/avatar/minony/120/3.jpg");
+ }
+ #circle4 {
+ 	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJgOBkd64WXe36dIa5EaGhuAgfOilfFv5vwNSVKbOTBBGBGgv3");
+ }
+ #pic {
+ 	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Renyxa.svg/300px-Renyxa.svg.png");
+ }
+ #pic1 {
+ 	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Flag_of_Lida.svg/300px-Flag_of_Lida.svg.png");
+ }
+ #carouselExampleSlidesOnly {
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+   }
+ @media screen and (max-width: 960px) {
+    .wrapper, .welcome, #carouselExampleSlidesOnly, .flex-container2, .flex-container1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 960px) {
+    .flex-container3, .flex-container4, ul {
+        display: flex;
+  		flex-direction: column;
+  		align-items: flex-start;
+    }
+    .flex-container1 {
+	    height: 250px;
+}  
+}
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.qwerty{
+  text-align: center;
+  color:white;
+  font-weight: bold;
+  font-size: 63px;
+}
+.zx
+{
+  width: 100px;
+  border: 5px solid red;
+  margin-bottom: 10px;
+  margin-left: 600px;
+}
+@media screen and (max-width: 960px) {
+	.zx{
+    	width: 100%;
+    	margin:0 auto;
+    }
+}
+@media screen and (max-width: 960px) {
+	.flex-container1 {
+		padding-top: 10px;
+	}
+	ul li{
+		padding: 20px;
+	}
+	ul {
+		margin-top: 20px;
+	}
+}
+</style>
+<body>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<div class="flex-container">
+<div class="flex-container1">
+  <div class="logo"></div>
+      <ul>
+  <li><a href="#1"><button type="button" class="btn btn-danger">HOME</button></a></li>
+  <li><a href="#2"><button type="button" class="btn btn-danger">ABOUT</button></a></li>
+  <li><a href="#3"><button type="button" class="btn btn-danger">SERVICES</button></a></li>
+  <li><a href="#4"><button type="button" class="btn btn-danger">GALLERY</button></a></li>
+  <li><a href="#5"><button type="button" class="btn btn-danger">CONTACT US</button></a></li>
+    </ul>
+  </div>
+  <div class="wrapper"> 
+  <h1 class="welcome"><a name = "1">WELCOME ON HOLYLAND</a></h1>
+  <p id="abz">We are starting to work in the beauty market and modern innovative COSMETICS
+  </p>
+  </div>
+  <div class="flex-container2">
+    <div id="cont"> <h1 class="team"><a name = "2">OUR TEAM</a></h1>
+    <div class="hr"> </div></div>
+    </div>
+<div class="flex-container3">
+  <div class="a1">
+  <div id="circle1"></div>
+  <h2 >Andre Tan</h2>
+  <h3 >Desainer</h3>
+  <p id="abz"> Do not seek to change what has come before. Seek to create that which has not.</p>
+  </div>
+  <div class="b1">
+  <div id="circle2"></div>
+  <h2 >Monroe</h2>
+  <h3 >Builder</h3>
+  <p id="abz">Do not seek to change what has come before. Seek to create that which has not.</p>
+  </div>
+  <div class="c1">
+  <div id="circle3"></div>
+  <h2 >Alex Brutal</h2>
+  <h3 >Builder</h3>
+  <p id="abz"> Do not seek to change what has come before. Seek to create that which has not.</p>
+  </div>
+  <div class="d1">
+  <div id="circle4"></div>
+  <h2 >Phoenix</h2>
+  <h3 >Сreative Director</h3>
+  <p id="abz"> Do not seek to change what has come before. Seek to create that which has not.</p>
+  </div>
+  </div>
+  <div class="flex-container2">
+    <div id="cont"> <h1 class="team"><a name = "3">SERVICES</a></h1>
+    <div class="hr"> </div></div>
+    </div>
+    <div class="flex-container4">
+  <div class="a1">
+  <div id="pic"></div>
+  <h2 >Andre Tan</h2>
+  <h3 >Desainer</h3>
+  <p id="abz"> Do not seek to change what has come before. Seek to create that which has not.</p>
+  </div>
+  <div class="b1">
+  <div id="pic1"></div>
+  <h2 >Monroe</h2>
+  <h3 >Builder</h3>
+  <p id="abz"> Do not seek to change what has come before. Seek to create that which has not.</p>
+  </div>
+</div>
+<div class="flex-container2">
+    <div id="cont"> <h1 class="team"><a name = "4">GALLERY</a></h1>
+    <div class="hr"> </div></div>
+    </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="https://kerch.fm/uploads/posts/2017-08/1503654014_razlichnyie-marki-i-vidyi-tsementa.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="http://stroyres.net/wp-content/uploads/2014/12/kak-vyiglyadyat-bloki-iz-opilok-i-tsementa.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.ua.prom.st/694049780_694049780.jpg?PIMAGE_ID=694049780" class="d-block w-100" alt="..."></div>
+      <div class="carousel-item">
+        <img src="http://stroyres.net/wp-content/uploads/2014/12/Zadelka-shvov-vodostoykom-tsementom.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+</div>
+<div class="flex-container2">
+    <div id="cont"> <h1 class="team"><a name = "5">CONTACT US</a></h1>
+    <div class="hr"> </div></div>
+    </div>
+    <div class="qwerty">
+    <p>Contact us: +380992343812</p></div>
+    <div class="zx"></div>
+<div class="container">
+  <form>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+        <option value="ukr">Ukraine</option>
+        <option value="ger">Germany</option>
+        <option value="uk">United Kingdow</option>
+        <option value="fra">France</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+</body>
+</html>
